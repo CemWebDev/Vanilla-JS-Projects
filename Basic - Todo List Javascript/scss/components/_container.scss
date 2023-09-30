@@ -1,0 +1,47 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.container {
+  background-color: $container-bg-color;
+  position: relative;
+  padding: 1rem;
+  max-width: 700px;
+  overflow: hidden;
+  max-height: 455px;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 5px 18px rgba($color: #000000, $alpha: 0.8);
+  #form {
+    .action-form-elements {
+      @include flex(center, space-between);
+      flex-wrap: wrap;
+      gap: 12px;
+      .buttons {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: wrap;
+        button {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+        }
+        #check-button {
+          background-color: $body-bg-color;
+        }
+        #add-task {
+            background-color: #42b883;
+        }
+        #delete-task {
+            background-color: #c13131;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 46.875rem) {
+  body {
+    padding: 0 1rem;
+  }
+}

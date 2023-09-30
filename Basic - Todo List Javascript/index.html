@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List || Javascript Projects</title>
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,300;1,400&family=Outfit:wght@400;700&family=Poppins:wght@100;300;400;500&family=Roboto+Condensed&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="header">Todo List</h1>
+      <form id="form">
+        <div id="error-text"></div>
+        <div id="success-text"></div>
+        <div class="action-form-elements">
+          <div class="input">
+            <input
+              type="text"
+              placeholder="Write a task"
+              id="task-value"
+              spellcheck="false"
+            />
+          </div>
+          <div class="buttons">
+            <button id="check-button">
+              <i class="fa-solid fa-check"></i> Check the input
+            </button>
+            <button id="add-task">
+              <i class="fa-solid fa-plus"></i> Add to list
+            </button>
+            <button id="delete-task">
+              <i class="fa-solid fa-trash"></i> Clear the list
+            </button>
+          </div>
+        </div>
+      </form>
+      <div id="tasks"></div>
+    </div>
+    <div class="attribute">
+      <span>Coded By</span
+      ><a href="https://github.com/CemWebDev" target="_blank">
+        Cem Baba <i class="fa-brands fa-github"></i
+      ></a>
+    </div>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

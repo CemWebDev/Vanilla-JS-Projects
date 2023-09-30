@@ -1,0 +1,85 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+*,
+*::before,
+*::after {
+  margin: $reset;
+  padding: $reset;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  @include flex(center, center);
+  background-color: $body-bg-color;
+}
+
+button,
+input {
+  border: $reset;
+  outline: $reset;
+  border-radius: 4px;
+  line-height: 26px;
+}
+
+button {
+  padding: 0 12px;
+  color: #fff;
+  cursor: pointer;
+  &:disabled {
+    opacity: .7;
+  }
+}
+
+
+.disabled {
+  opacity: 0.6;
+}
+
+input {
+    padding: 0 1.5rem;
+    opacity: .8;
+    &:focus {
+      opacity: 1;
+    }
+}
+
+h1 {
+    margin: 10px 0;
+    color: $body-bg-color;
+}
+
+p {
+  text-align: center;
+  width: 100%;
+  margin: 12px 0;
+  background-color: $body-bg-color;
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    opacity: .6;
+  }
+}
+
+
+.attribute {
+  position: absolute;
+  bottom: 5px;
+  color: #fff;
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
