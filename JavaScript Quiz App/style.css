@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,300;1,400&family=Outfit:wght@400;700&family=Overpass:ital@1&family=Pacifico&family=Poppins:wght@100;300;400;500&family=Roboto+Condensed&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #34495e;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+body > .container {
+  max-width: 600px;
+  width: 90%;
+  margin: 100px auto 0;
+  background-color: #e4f1fe;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(228, 241, 254, 0.5);
+}
+
+body > .container > header {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #34495e;
+}
+body > .container > header > h1 {
+  color: #34495e;
+}
+
+body > .container > section > .options > .btn {
+  width: 100%;
+  text-align: left;
+  padding: 15px 10px;
+  margin: 10px auto;
+  font-size: 16px;
+  color: #fff;
+  background-color: #34495e;
+}
+body > .container > section > .options > .btn:hover:not([disabled]) {
+  background-color: #ddd;
+  color: #34495e;
+}
+body > .container > section > .options > .btn:disabled {
+  cursor: no-drop;
+}
+
+body > .container > section > button#next-button {
+  padding: 10px;
+  color: #fff;
+  background-color: #34495e;
+  margin: 30px auto 0;
+  width: 120px;
+  display: none;
+  font-size: 15px;
+}
+
+.correct {
+  background-color: rgba(97, 210, 180, 0.7) !important;
+}
+
+.wrong {
+  background-color: rgba(235, 38, 50, 0.7) !important;
+}
