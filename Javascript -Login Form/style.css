@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+:root{
+    --container-background-color: #e7eaf6;
+    --background-color: #a2a8d3;
+    --white: #fff;
+    --facebookColor: #4267B2;
+    --whatsappColor: 	#25D366;
+    --githubColor: #333;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 1px);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px auto;
+    background-color: var(--background-color);
+    user-select: none;
+    transition: .4s ease;
+}
+
+.container{
+    max-width: 450px;
+    width: 100%;
+    background-color: var(--container-background-color);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 8px 12px rgba(100, 100, 100, .7);
+}
+
+.form > form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container .theme-icon i{
+    cursor: pointer;
+}
+
+
+input, button {
+    border-radius: 20px;
+}
+
+input{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    line-height: 30px;
+    padding: 0 1rem;
+} 
+
+
+button{
+    border: none;
+}
+
+.submit-button{
+    margin-left: 16px;
+    cursor: pointer;
+    width: 120px;
+    height: 35px;
+    background-color: var(--whatsappColor);
+    color: var(--white);
+}
+
+.submit-button:hover{
+    opacity: 0.7;
+}
+
+.social-media-part{
+    text-align: center
+}
+
+
+.icon-buttons{
+    width: 90%;
+    height: 35px;
+    margin: 10px;
+    cursor: pointer;
+    color: var(--white);
+}
+
+#facebook{
+    background-color: var(--facebookColor);
+}
+#snapchat{
+    background-color: var(--whatsappColor);
+}
+#github{
+    background-color: var(--githubColor);
+}
+
+.icon-buttons:hover{
+    opacity: 0.7;
+}
+
+.attribute{
+    color: var(--githubColor);
+}
+
+.attribute a{
+    color: var(--githubColor);
+}
+
+.attribute a:hover{
+    opacity: 0.7;
+}
+
+
+.error {
+    border: 1px solid  red;
+}
+
+.success {
+    border: 1px solid  var(--whatsappColor);
+}
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        padding: 0 1rem;
+    }
+    .container {
+        max-width: 380px;
+        padding: 10px;
+    }
+}
