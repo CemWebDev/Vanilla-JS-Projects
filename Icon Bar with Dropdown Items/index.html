@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icon Bar and Dropdown Menus || Jquery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,300;1,400&family=Outfit:wght@400;700&family=Poppins:wght@100;300;400;500&family=Roboto+Condensed&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="small-screen">
+      You have to expand your screen if you want to use dropdown menus.
+    </div>
+    <div class="icons">
+      <a href="#" id="javascript"
+        ><i class="fa-brands fa-js" id="js-icon"></i
+      ></a>
+      <a href="#" id="angular"
+        ><i class="fa-brands fa-angular" id="angular-icon"></i
+      ></a>
+      <a href="#" id="react"
+        ><i class="fa-brands fa-react" id="react-icon"></i
+      ></a>
+      <a href="#" id="html"
+        ><i class="fa-brands fa-html5" id="html-icon"></i
+      ></a>
+      <a href="#" id="css"
+        ><i class="fa-brands fa-css3-alt" id="css-icon"></i
+      ></a>
+      <a href="#" id="dropdown-toggle"
+        ><i class="bi bi-three-dots" id="three-dots-icon"></i
+      ></a>
+    </div>
+    <div class="js-list dropdown-item" id="js-dropdown-list">
+      <ul>
+        <li><a href="#">ES6 Features</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Jquery</a></li>
+        <li><a href="#">Typescript</a></li>
+      </ul>
+    </div>
+    <div class="angular-list dropdown-item" id="angular-dropdown-list">
+      <ul>
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Components</a></li>
+        <li><a href="#">Angular Blog</a></li>
+      </ul>
+    </div>
+    <div class="react-list dropdown-item" id="react-dropdown-list">
+      <ul>
+        <li><a href="#">Learn React</a></li>
+        <li><a href="#">API Reference</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">React Blog</a></li>
+      </ul>
+    </div>
+    <div class="html-list dropdown-item" id="html-dropdown-list">
+      <ul>
+        <li><a href="#">Meta Tags</a></li>
+        <li><a href="#">Form Elements</a></li>
+        <li><a href="#">Semantic Web Structure</a></li>
+        <li><a href="#">Links</a></li>
+      </ul>
+    </div>
+    <div class="css-list dropdown-item" id="css-dropdown-list">
+      <ul>
+        <li><a href="#">Frameworks</a></li>
+        <li><a href="#">Flexbox</a></li>
+        <li><a href="#">Css Icons</a></li>
+        <li><a href="#">CSS Animations</a></li>
+      </ul>
+    </div>
+    <div class="list dropdown-item" id="dropdown-list">
+      <ul>
+        <li><a href="#">Get Started</a></li>
+        <li><a href="#">Join Us</a></li>
+        <li><a href="#">Bootcamps</a></li>
+        <li><a href="#">Donate Us</a></li>
+      </ul>
+    </div>
+    <div class="attribute">
+      <span
+        >Created by
+        <a href="https://github.com/CemWebDev" id="link" target="_blank"
+          >CemWebDev <i class="fa-brands fa-github"></i></a
+      ></span>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>

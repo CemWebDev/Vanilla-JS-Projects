@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  user-select: none;
+  text-decoration: none;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --white-toned: #ccc;
+  --black-toned: #333;
+  --body-background-color: #606470;
+  --js-color: #f7fd1e;
+  --angular-color: #b52e31;
+  --react-color: #61dbfb;
+  --html-color: #e44d26;
+  --css-color: #1572b6;
+  --three-dots-color: #d65a31;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 1px);
+  font-family: "Outfit", sans-serif;
+  background-color: var(--body-background-color);
+}
+
+.small-screen {
+  display: none;
+}
+
+.icons {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  background-color: var(--black);
+  border-radius: 10px;
+}
+
+.icons a {
+  text-align: center;
+  padding: 15px;
+}
+
+.icons a:hover {
+  background-color: var(--black-toned);
+}
+
+.icons a:hover:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.icons a:hover:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.icons a i {
+  font-size: 18px;
+  color: var(--white);
+}
+
+li a {
+  padding: 8px;
+  border-radius: 30px;
+}
+
+.dropdown-item {
+  border-radius: 10px;
+  background-color: var(--black);
+  width: 350px;
+  text-align: center;
+  margin-top: 307px;
+  display: none;
+}
+
+li {
+  padding: 20px;
+  font-size: 16px;
+  border-bottom: 1px solid var(--white);
+}
+
+li:last-child {
+  border: 0;
+}
+
+.list li a {
+  background-color: var(--three-dots-color);
+  color: var(--black);
+}
+
+.list li a:hover {
+  background-color: var(--black);
+  color: var(--three-dots-color);
+}
+
+.js-list a {
+  background-color: var(--js-color);
+  color: var(--black);
+}
+
+.js-list a:hover {
+  color: var(--js-color);
+  background-color: var(--black);
+}
+
+.angular-list a {
+  background-color: var(--angular-color);
+  color: var(--black);
+}
+
+.angular-list a:hover {
+  color: var(--angular-color);
+  background-color: var(--black);
+}
+
+.react-list a {
+  background-color: var(--react-color);
+  color: var(--black);
+}
+
+.react-list a:hover {
+  color: var(--react-color);
+  background-color: var(--black);
+}
+
+.html-list a {
+  background-color: var(--html-color);
+  color: var(--black);
+}
+
+.html-list a:hover {
+  background-color: var(--black);
+  color: var(--html-color);
+}
+
+.css-list a {
+  background-color: var(--css-color);
+  color: var(--black);
+}
+
+.css-list a:hover {
+  background-color: var(--black);
+  color: var(--css-color);
+}
+
+.js-color {
+  color: var(--js-color) !important;
+}
+
+.angular-color {
+  color: var(--angular-color) !important;
+}
+
+.react-color {
+  color: var(--react-color) !important;
+}
+
+.html-color {
+  color: var(--html-color) !important;
+}
+
+.css-color {
+  color: var(--css-color) !important;
+}
+
+.settings-color {
+    color: var(--three-dots-color) !important;
+}
+
+.attribute {
+  position: absolute;
+  bottom: 1%;
+}
+
+.attribute a {
+  color: var(--white-toned);
+}
+
+.attribute a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+  .icons a#dropdown-toggle,
+  .dropdown-item {
+    display: none !important;
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+  }
+  .icons a:hover:first-child {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  .icons #css:hover {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+  }
+  .icons a {
+    display: block;
+  }
+  .small-screen {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    display: block;
+  }
+}
