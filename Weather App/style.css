@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 1px);
+  user-select: none;
+  background-color: #acdcee;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #2772db;
+  width: 380px;
+  height: 400px;
+}
+
+.container header {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  height: 50px;
+}
+
+.container header span {
+  color: #fff;
+  font-size: 22px;
+}
+
+.container header span i {
+  color: yellow;
+}
+
+.container main {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.container main #form-part {
+  margin-top: 45px;
+}
+
+.container main #form-part input,
+button {
+  border: 0;
+  margin: 10px;
+  width: 80%;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.container main #form-part input {
+  outline: 0;
+  padding: 3px;
+}
+
+.container main #form-part button {
+  cursor: pointer;
+  color: #f3f3f3;
+  background-color: #f78536;
+}
+
+.container main #form-part button:hover {
+  opacity: 0.8;
+}
+
+.container main .separator {
+  text-align: center;
+  margin-top: 45px;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.weather-info {
+  margin-top: 20px;
+}
+
+.weather-info p {
+  margin: 12px;
+  color: #fff;
+  font-size: 18px;
+}

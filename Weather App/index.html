@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Project || JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-card">
+        <header id="header">
+          <span><i class="bx bxs-sun"></i> Weather</span>
+        </header>
+        <main>
+          <form action="#" id="form-part">
+            <input
+              type="text"
+              id="city-name"
+              placeholder="Please enter a city name"
+              spellcheck="false"
+            /><br />
+            <button type="button" id="display-button">
+              <i class="bx bxs-location-plus"></i> Display the weather
+            </button>
+          </form>
+          <div class="separator"></div>
+          <div class="weather-info">
+            <p id="city-country"></p>
+            <p id="temperature"></p>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>
