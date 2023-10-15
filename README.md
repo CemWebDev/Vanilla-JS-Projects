@@ -1,10 +1,7 @@
 # Javascript-Projects
 
-## Images From This Repository.
-
-### Javascript Quiz App
-![mobile (1)](https://github.com/CemWebDev/Javascript-Projects/assets/137628926/64bc7c1f-8fb5-4d07-bbd3-ab61d1ef7e31)
-
-### Icon Bar With Dropdown Items
-![mobile (3)](https://github.com/CemWebDev/Javascript-Projects/assets/137628926/4a9806e8-ade1-4ec8-9fb4-5478852332cb)
-https://sensational-llama-635cf4.netlify.app
+| Project Name | Project Link |
+|-----------|------------|
+| Icon Bar With Dropdoewn Items   | [Link 1](https://github.com/kullanici/proje1) |
+| Proje 2   | [Link 2](https://github.com/kullanici/proje2) |
+| Proje 3   | [Link 3](https://github.com/kullanici/proje3) |
