@@ -1,7 +1,7 @@
 # Javascript-Projects
 
-| Project Name | | Technologies|
-|------|------------| -------------- |
-| [Icon Bar With Dropdoewn Items]   | [Link 1](https://sensational-llama-635cf4.netlify.app) | HTML5, CSS3, JS |
-| JavaScript Quiz App   | [Link 2](https://majestic-gingersnap-64dcdc.netlify.app) | HTML5, CSS3, JS |
-| Proje 3   | [Link 3](https://github.com/kullanici/proje3) |
+| Project Name | Technologies |
+|-----------|------------|
+| [Icon Bar With Dropdown Items](https://sensational-llama-635cf4.netlify.app)   | HTML5, CSS3, JS |
+| [Quiz App](https://majestic-gingersnap-64dcdc.netlify.app)   | HTML5, CSS3, JS |
+| [Responsive Navbar](https://dynamic-sherbet-99d8cd.netlify.app)   | HTML5, CSS3, JS |
