@@ -1,7 +1,7 @@
 const movieInput = document.querySelector("#movie-input");
 const searchButton = document.querySelector("#search-button");
 const resultContent = document.querySelector(".result");
-const API_KEY = "6213ea41";
+const API_KEY = "Your Api key";
 const displayFeatures = () => {
   const movieName = movieInput.value;
   const url = `http://www.omdbapi.com/?apikey=${API_KEY}&t=${movieName}`;
