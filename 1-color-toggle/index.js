@@ -27,5 +27,3 @@ toggleButton.addEventListener("click", () => {
     Theme("#333", "#fff", "Dark Theme", "#fff", "#fff", "#fff");
   }
 });
-
-console.log("hello, world!");
