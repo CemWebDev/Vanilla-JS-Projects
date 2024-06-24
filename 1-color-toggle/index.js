@@ -1,29 +1,19 @@
-const toggleButton = document.querySelector("#toggle-button");
-const body = document.querySelector("body");
-const heading = document.querySelector("#header");
-const attribute = document.querySelector("#attribute");
+const toggleBtn = document.querySelector("#toggle-btn");
+const body = document.body;
+const header = document.querySelector("h4");
 
-const Theme = (
-  bodyBgColor,
-  bodyTextColor,
-  themeHeader,
-  headerColor,
-  toggleButtonColor,
-  attributeColor
-) => {
-  body.style.backgroundColor = bodyBgColor;
-  body.style.color = bodyTextColor;
-  heading.innerHTML = themeHeader;
-  heading.style.color = headerColor;
-  toggleButton.style.color = toggleButtonColor;
-  attribute.style.color = attributeColor;
+const changeTheme = (bodyBg, buttonBg, buttonColor, headerColor) => {
+  body.style.backgroundColor = bodyBg;
+  toggleBtn.style.backgroundColor = buttonBg;
+  toggleBtn.style.color = buttonColor;
+  header.style.color = headerColor;
 };
 
-toggleButton.addEventListener("click", () => {
-  toggleButton.classList.toggle("fa-moon");
-  if (toggleButton.classList.toggle("fa-sun")) {
-    Theme("#fff", "#333", "Light Theme", "#333", "#333", "#333");
+toggleBtn.addEventListener("click", () => {
+  toggleBtn.classList.toggle("bi-sun-fill");
+  if (toggleBtn.classList.contains("bi-sun-fill")) {
+    changeTheme("#f3f3f3", "#000", "#f3f3f3", "#000");
   } else {
-    Theme("#333", "#fff", "Dark Theme", "#fff", "#fff", "#fff");
+    changeTheme("#000", "#f3f3f3", "#000", "#f3f3f3");
   }
 });
