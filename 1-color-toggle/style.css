@@ -8,4 +8,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f3f3f3;
+  font-family: sans-serif;
+}
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: .5rem 2.25rem;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .6);
+  border-radius: .5rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
 }
