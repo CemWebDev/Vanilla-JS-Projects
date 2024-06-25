@@ -3,9 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  user-select: none;
   transition: 0.2s ease;
 }
 
@@ -22,10 +19,16 @@ body {
   height: 100vh;
   background-color: var(--body-background-color);
   font-family: "Poppins", sans-serif;
+  user-select: none;
 }
 
 a {
   color: var(--white);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 i {
