@@ -11,9 +11,7 @@ changeColorBtn.addEventListener("click", (e) => {
   changeTheColor();
 });
 
-const getRandomNumber = () => {
-  return Math.floor(Math.random() * colors.length);
-};
+const getRandomNumber = () => Math.floor(Math.random() * colors.length);
 
 const changeTheColor = () => {
   const randomNumber = getRandomNumber();
