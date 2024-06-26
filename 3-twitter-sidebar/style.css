@@ -136,7 +136,10 @@ header a {
   border-radius: 20px;
   box-shadow: 0 0 9px var(--white);
 }
-
+.tooltip-menu.visible {
+  opacity: 1;
+  visibility: visible;
+}
 .tooltip-menu ul li {
   cursor: pointer;
   padding: 8px;
@@ -174,20 +177,19 @@ header a {
   .tooltip-menu {
     top: 58%;
   }
-  .wrapper .footer-wrapper .username,
-  .more {
+}
+
+@media only screen and (max-width: 60rem) {
+  .profile > .avatar, .username {
     display: none;
   }
-  .wrapper .footer-wrapper {
-    margin-left: 10px;
+  .sidebar-list > li:nth-child(9) {
+    display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .twitter-sidebar {
-    display: none;
-  }
-  .tooltip-menu {
+  .wrapper, .tooltip-menu {
     display: none;
   }
 }

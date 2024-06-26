@@ -1,23 +1,21 @@
 const tooltipMenuBtn = document.querySelector("#open-tooltip-menu");
 const tooltipMenu = document.querySelector(".tooltip-menu");
 
-const toggleMenu = (opacity, visibility) => {
-  tooltipMenu.style.opacity = opacity;
-  tooltipMenu.style.visibility = visibility;
+const toggleMenu = () => {
+  tooltipMenu.classList.toggle("visible");
 };
-
 const handleEvents = () => {
-  tooltipMenuBtn.addEventListener("click", () => {
-    toggleMenu("1", "visible");
+  tooltipMenuBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toggleMenu();
   });
   window.addEventListener("click", (e) => {
     if (
-      !e.composedPath().includes(tooltipMenuBtn) &&
-      !e.composedPath().includes(tooltipMenu)
+      !e.composedPath().includes(tooltipMenu) &&
+      !e.composedPath().includes(tooltipMenuBtn)
     ) {
-      toggleMenu("0", "hidden");
+      tooltipMenu.classList.remove("visible");
     }
   });
 };
-
 handleEvents();
