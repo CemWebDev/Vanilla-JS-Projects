@@ -124,6 +124,8 @@ header a {
 }
 
 .tooltip-menu {
+  opacity: 0;
+  visibility: hidden;
   padding: 1rem;
   position: absolute;
   top: 70%;
