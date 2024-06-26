@@ -31,63 +31,72 @@ li {
   list-style: none;
 }
 
-i {
-  margin-right: 10px;
-}
-
-.twitter-sidebar {
+.wrapper {
+  margin-left: 5rem;
   height: 100%;
   width: 26%;
   border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem 0;
 }
 
-.wrapper {
-  margin-left: 120px;
+header {
+  margin: 1rem 0;
 }
-
-.wrapper header {
-  padding: 10px;
-}
-
-.wrapper header a {
+header a {
   font-size: 4vmin;
   padding: 10px;
   color: var(--twitter-blue);
+  display: flex;
 }
 
-.wrapper ul {
-  margin-right: 15px;
+.wrapper .sidebar-list {
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 
-.wrapper ul li {
+.wrapper .sidebar-list li {
   cursor: pointer;
-  padding: 10px;
-  margin: 2px;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
   border-radius: 1.5rem;
 }
+.wrapper .sidebar-list li:last-child a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.wrapper ul li:hover {
+.wrapper .sidebar-list li:hover {
   background-color: var(--hover-color);
 }
 
-.wrapper ul li a i {
+.wrapper .sidebar-list li a i {
   font-size: 3vmin;
 }
 
-.wrapper ul li a {
+.wrapper .sidebar-list li a {
   font-size: 2.7vmin;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.wrapper ul #tweet-button {
+.wrapper .sidebar-list #tweet-button {
   text-align: center;
   background-color: var(--twitter-blue);
 }
 
-.wrapper ul #tweet-button:hover {
+.wrapper .sidebar-list #tweet-button:hover {
   opacity: 0.9;
 }
 
-.wrapper ul #tweet-button a {
+.wrapper .sidebar-list #tweet-button a {
   font-weight: 500;
 }
 
@@ -137,10 +146,6 @@ i {
 .tooltip-menu ul li:hover {
   background-color: var(--hover-color);
 }
-
-/*
-!Responsive Codes
-*/
 
 @media screen and (max-width: 1280px) {
   .twitter-sidebar {
