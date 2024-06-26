@@ -1,4 +1,4 @@
-const tooltipMenuBtn = document.querySelector("#tooltip-menu-toggle");
+const tooltipMenuBtn = document.querySelector("#open-tooltip-menu");
 const tooltipMenu = document.querySelector(".tooltip-menu");
 
 const ToggleMenu = (opacity, visibility) => {
