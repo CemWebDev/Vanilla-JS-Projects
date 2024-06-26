@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
 body {
@@ -35,7 +35,7 @@ body {
 }
 
 button:hover:not(.counter-value) {
-    opacity: .7;
+  opacity: 0.7;
 }
 
 .container .reset-button {
@@ -56,19 +56,13 @@ button:hover:not(.counter-value) {
   color: #fff;
 }
 
-
-.attribute {
-  position: absolute;
-  bottom: 10%;
-  font-size: 17px;
-  color: #ccc;
+@media only screen and (max-width: 31.875rem) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
-.attribute a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.attribute a:hover {
-  color: #ccc;
+@media only screen and (max-width: 16.875rem) {
+  .container {
+    grid-template-columns: 1fr;
+  }
 }
