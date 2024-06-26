@@ -106,40 +106,22 @@ header a {
 .profile {
   color: var(--white);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  font-size: 0.875rem;
 }
 .profile .avatar {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   background-image: url("./profile.jpg");
-  object-fit: cover;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
-
-.wrapper footer {
-  position: absolute;
-  bottom: 2.5%;
-}
-
-.wrapper footer .footer-wrapper {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
-.wrapper footer .footer-wrapper .username {
-  text-align: start;
-}
-
-.wrapper footer .footer-wrapper .pp i {
-  font-size: 4vmin;
-}
-
-.wrapper footer .footer-wrapper .more i {
+.profile .more i {
   cursor: pointer;
 }
-
 .tooltip-menu {
   opacity: 0;
   visibility: hidden;
