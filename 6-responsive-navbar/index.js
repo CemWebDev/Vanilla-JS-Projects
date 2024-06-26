@@ -1,4 +1,4 @@
-const toggleMenuIcon = document.querySelector(".toggle-menu");
+const toggleMenuIcon = document.querySelector(".open-menu");
 const navbar = document.querySelector(".navbar");
 
 toggleMenuIcon.addEventListener("click", () => {

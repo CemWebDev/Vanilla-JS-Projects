@@ -89,7 +89,7 @@ header {
   border-radius: 20px;
 }
 
-.toggle-menu {
+.open-menu {
   color: #000;
   font-size: 20px;
   cursor: pointer;
@@ -109,7 +109,7 @@ header {
 }
 
 @media only screen and (max-width: 32.5rem) {
-  .toggle-menu {
+  .open-menu {
     display: block;
   }
   .navbar {
