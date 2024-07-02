@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   transition: 0.2s ease;
-  user-select: none;
 }
 
 html {
@@ -28,7 +27,10 @@ button {
   cursor: pointer;
   background: none;
 }
-
+.visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 .navbar {
   position: sticky;
   top: 0;
@@ -78,8 +80,8 @@ button {
 }
 
 .search form input:focus {
-    background-color: #fff;
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, .6);
+  background-color: #fff;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 .header-buttons {
@@ -102,7 +104,6 @@ button {
   cursor: pointer;
   max-width: 50px;
 }
-
 
 .modal-faq {
   position: absolute;
@@ -141,15 +142,14 @@ button {
   gap: 3px;
 }
 
-
 @media only screen and (max-width: 42.5rem) {
-    .header-buttons {
-        display: none;
-    }
-    .search {
-        flex: 1;
-    }
-    .modal-faq {
-      display: none;
-    }
+  .header-buttons {
+    display: none;
+  }
+  .search {
+    flex: 1;
+  }
+  .modal-faq {
+    display: none;
+  }
 }
