@@ -8,12 +8,11 @@
 
 :root {
   --body-bg-color: #dbd8e3;
-  --circle-before-color: #f96d00;
   --circle-after-color: #f70776;
-  --container-bg-color: #f95959;
-  --world-icon-color: #007cb9;
+  --container-bg-color: #222;
+  --blue: #007cb9;
   --box-shadow-color: #444;
-  --text-color: #fff;
+  --white: #fff;
 }
 
 body {
@@ -22,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   user-select: none;
-  background-color: var(--body-bg-color);
+  background-color: var(--white);
   font-family: "Poppins", sans-serif;
   transition: 0.7s all;
 }
@@ -42,7 +41,7 @@ li {
   width: 100vmin;
   height: 100vmin;
   border-radius: 50% 50% 50% 50%;
-  background-color: var(--circle-before-color);
+  background-color: var(--blue);
   box-shadow: 2px 2px 12px;
 }
 
@@ -78,8 +77,8 @@ li {
   outline: 0;
   padding: 5px;
   background: transparent;
-  border-bottom: 2px solid var(--text-color);
-  color: var(--text-color);
+  border-bottom: 2px solid var(--white);
+  color: var(--white);
   text-transform: uppercase;
   opacity: 0.7;
 }
@@ -89,7 +88,7 @@ li {
 }
 
 .container header input::placeholder {
-  color: var(--text-color);
+  color: var(--white);
 }
 
 .container header button {
@@ -102,12 +101,14 @@ li {
   cursor: pointer;
   color: var(--container-bg-color);
   background-color: var(--body-bg-color);
+  border: 1px solid transparent;
 }
 
 .container header button:hover {
   transition: 0.7s;
   color: var(--body-bg-color);
   background-color: var(--container-bg-color);
+  border-color: var(--white);
 }
 
 .container header i {
@@ -120,7 +121,7 @@ li {
 }
 
 .container header i:hover {
-  color: var(--world-icon-color);
+  color: var(--blue);
   opacity: 1;
 }
 
