@@ -3,7 +3,7 @@ const cityName = document.querySelector("#city-name");
 const city_country = document.querySelector("#city-country");
 const temperature = document.querySelector("#temperature");
 
-const API_KEY = "63643e456651f4a59d88479cad249b44";
+const API_KEY = "YOUR API KEY";
 
 displayButton.addEventListener("click", () => {
   const city = cityName.value;
