@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --icon-color: #fd0054;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 1px);
+    font-family: "Poppins", sans-serif;
+    background-color: #f3f3f3;
+    padding: 10px
+}
+
+.container{
+    max-width: 800px;
+    background-color: #222;
+    text-align: center;
+    padding: 40px 45px;
+    border-radius: 18px;
+}
+
+.container header{
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.container #face{
+    color: var(--icon-color);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.container .content{
+    padding: 8px 10px;
+}
+
+.container .content .joke-text{
+    color: #f3f3f3;
+    overflow: auto;
+    max-height: 200px;
+}
+
+.container .content .joke-button {
+    margin-top: 10px;
+}
+
+.container .content .joke-button button{
+    cursor: pointer;
+    border: 0;
+    padding: 5px 10px;
+    background-color: var(--icon-color);
+    color: #f3f3f3;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.container .content .joke-button button:hover{
+    color: var(--icon-color);
+    background-color: #555;
+}
