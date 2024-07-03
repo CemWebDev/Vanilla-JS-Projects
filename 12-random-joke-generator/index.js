@@ -1,5 +1,5 @@
 const jokeText = document.querySelector(".joke-text");
-const jokeButton = document.querySelector("#joke-button");
+const jokeButton = document.querySelector("#generate-button");
 const api =
   "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,sexist,explicit";
 
