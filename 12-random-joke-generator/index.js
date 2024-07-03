@@ -12,7 +12,7 @@ const generateJoke = () => {
       } else if (data.type == "twopart") {
         jokeText.textContent = `${data.setup} ${data.delivery}`;
       } else {
-        jokeText.textContent = "No more jokes";
+        jokeText.textContent = "No more jokes :(";
       }
     })
     .catch((error) => {
