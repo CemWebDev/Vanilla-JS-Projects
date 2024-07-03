@@ -66,19 +66,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: #f3f3f3;
   font-weight: 600;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, .3);
-  
-  /*   color: #f3f3f3;
-  overflow: auto;
-  max-height: 12.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 16px 0;
-  flex-wrap: wrap; */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+  padding: 0.5rem;
 }
 .container .content #generate-button {
   background-color: var(--icon-color);
