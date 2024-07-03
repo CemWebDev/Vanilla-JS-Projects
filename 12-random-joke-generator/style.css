@@ -1,66 +1,88 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s ease;
 }
 
-:root{
-    --icon-color: #fd0054;
+:root {
+  --icon-color: #fd0054;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 1px);
-    font-family: "Poppins", sans-serif;
-    background-color: #f3f3f3;
-    padding: 10px
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f3f3;
+  padding: 0.625rem;
+}
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
 }
 
-.container{
-    max-width: 800px;
-    background-color: #222;
-    text-align: center;
-    padding: 40px 45px;
-    border-radius: 18px;
+.container {
+  max-width: 50rem;
+  width: 100%;
+  background-color: #222;
+  text-align: center;
+  padding: 2.5rem 2.8125rem;
+  border-radius: 1.125rem;
 }
 
-.container header{
-    border-bottom: 1px solid #f3f3f3;
+.container header {
+  border-bottom: 0.0625rem solid #f3f3f3;
 }
 
-.container #face{
-    color: var(--icon-color);
-    font-size: 40px;
-    margin-bottom: 10px;
+.container #face {
+  color: var(--icon-color);
+  font-size: 2.5rem;
+  margin-bottom: 0.625rem;
 }
 
-.container .content{
-    padding: 8px 10px;
+.container .content {
+  padding: 0.5rem 0.625rem;
 }
 
-.container .content .joke-text{
-    color: #f3f3f3;
-    overflow: auto;
-    max-height: 200px;
+.container .content .joke-text {
+  color: #f3f3f3;
+  overflow: auto;
+  max-height: 12.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+.container .content #generate-button {
+  background-color: var(--icon-color);
+  color: #fff;
+  font-size: 1rem;
 }
 
-.container .content .joke-button {
-    margin-top: 10px;
+/* .container .content .joke-button button {
+  cursor: pointer;
+  border: 0;
+  padding: .3125rem .625rem;
+  background-color: var(--icon-color);
+  color: #f3f3f3;
+  font-size: 1rem;
+  border-radius: .5rem;
 }
-
-.container .content .joke-button button{
-    cursor: pointer;
-    border: 0;
-    padding: 5px 10px;
-    background-color: var(--icon-color);
-    color: #f3f3f3;
-    font-size: 16px;
-    border-radius: 8px;
-}
-
-.container .content .joke-button button:hover{
-    color: var(--icon-color);
-    background-color: #555;
+ */
+.container .content .joke-button button:hover {
+  color: var(--icon-color);
+  background-color: #555;
 }
