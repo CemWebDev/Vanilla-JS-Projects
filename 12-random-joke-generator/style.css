@@ -72,16 +72,6 @@ button {
   font-size: 1rem;
 }
 
-/* .container .content .joke-button button {
-  cursor: pointer;
-  border: 0;
-  padding: .3125rem .625rem;
-  background-color: var(--icon-color);
-  color: #f3f3f3;
-  font-size: 1rem;
-  border-radius: .5rem;
-}
- */
 .container .content .joke-button button:hover {
   color: var(--icon-color);
   background-color: #555;
