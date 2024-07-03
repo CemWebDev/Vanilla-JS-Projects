@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Weather App V2 || JavaScript</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,300;1,400&family=Outfit:wght@400;700&family=Poppins:wght@100;300;400;500&family=Roboto+Condensed&family=Tilt+Prism&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <div class="container">
-        <header class="search-box">
-            <i class="fa-solid fa-location-dot" id="location-dot"></i>
-            <input type="text" placeholder="Enter your location" id="input-city">
-            <button class="fa-solid fa-magnifying-glass" id="search-button"></button>
-        </header>
-        <div class="error">
-            <i class='bx bxs-error'></i>
-            <p id="error-text">Please wait a few minutes and then refresh the page.</p>
+      <header class="search-box">
+        <i class="fa-solid fa-location-dot" id="location-dot"></i>
+        <input type="text" placeholder="Enter your location" id="input-city" />
+        <button
+          class="fa-solid fa-magnifying-glass"
+          id="search-button"
+        ></button>
+      </header>
+      <div class="error">
+        <i class="bx bxs-error"></i>
+        <p id="error-text">
+          Please wait a few minutes and then refresh the page.
+        </p>
+      </div>
+      <div class="content">
+        <div class="sunny">
+          <i class="fa-solid fa-sun" id="sunny"></i>
         </div>
-        <div class="content">
-            <div class="sunny">
-                <i class="fa-solid fa-sun" id="sunny"></i>
-            </div> 
-            <div class="rainy">
-                <i class="fa-solid fa-cloud-rain"></i>
-            </div> 
-            <div class="snowy">
-                <i class="fa-solid fa-snowflake" id="snowy"></i>
-            </div>
-            <div class="mostly-sunny">
-                <i class="fa-solid fa-cloud-sun-rain"></i>
-            </div>
-            <div class="weather-content-text">
-                <span id="city-info"></span><br>
-                <span id="temperature-info">34</span>
-            </div>
+        <div class="rainy">
+          <i class="fa-solid fa-cloud-rain"></i>
         </div>
-        <div class="content-bottom">
-            <span id="humidity" style="color: black;">
-            </span>
-            <span id="wind" style="color: black;">
-            </span>
+        <div class="snowy">
+          <i class="fa-solid fa-snowflake" id="snowy"></i>
         </div>
-        <div class="not-found">
-            <i class='bx bxs-error'></i>
-            <p id="not-found-text">You should check your connection or your API key then, refresh the page.</p>
+        <div class="mostly-sunny">
+          <i class="fa-solid fa-cloud-sun-rain"></i>
         </div>
+        <div class="weather-content-text">
+          <span id="city-info"></span><br />
+          <span id="temperature-info">34</span>
+        </div>
+      </div>
+      <div class="content-bottom">
+        <span id="humidity" style="color: black"> </span>
+        <span id="wind" style="color: black"> </span>
+      </div>
+      <div class="not-found">
+        <i class="bx bxs-error"></i>
+        <p id="not-found-text">
+          You should check your connection or your API key then, refresh the
+          page.
+        </p>
+      </div>
     </div>
     <script defer src="script.js"></script>
-</body>
+  </body>
 </html>

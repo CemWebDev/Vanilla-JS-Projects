@@ -17,7 +17,7 @@ searchButton.addEventListener("click", () => {
     alert("You must write a valid city name.");
     return;
   }
-  const API_KEY = "Your Api Key";
+  const API_KEY = "63643e456651f4a59d88479cad249b44";
   const api = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`;
   fetch(api)
     .then((response) => response.json())
