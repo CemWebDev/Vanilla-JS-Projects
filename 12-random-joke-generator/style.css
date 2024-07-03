@@ -40,6 +40,7 @@ button {
   text-align: center;
   padding: 2.5rem 2.8125rem;
   border-radius: 1.125rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
 }
 
 .container header {
@@ -57,22 +58,35 @@ button {
 }
 
 .container .content .joke-text {
-  color: #f3f3f3;
+  height: 100px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5rem;
+  background-color: #f3f3f3;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, .3);
+  
+  /*   color: #f3f3f3;
   overflow: auto;
   max-height: 12.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 16px 0;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 .container .content #generate-button {
   background-color: var(--icon-color);
   color: #fff;
   font-size: 1rem;
+  border: 1px solid transparent;
 }
-
-.container .content .joke-button button:hover {
-  color: var(--icon-color);
-  background-color: #555;
+.container .content #generate-button:hover {
+  border-color: var(--icon-color);
+  background-color: transparent;
 }
