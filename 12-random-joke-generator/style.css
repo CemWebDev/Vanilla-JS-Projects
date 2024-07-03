@@ -34,17 +34,19 @@ button {
 }
 
 .container {
-  max-width: 50rem;
+  max-width: 40rem;
   width: 100%;
   background-color: #222;
   text-align: center;
-  padding: 2.5rem 2.8125rem;
+  padding: 1.5rem;
   border-radius: 1.125rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
 }
 
-.container header {
-  border-bottom: 0.0625rem solid #f3f3f3;
+.separator {
+  width: 100%;
+  background-color: #f3f3f3;
+  height: 0.0938rem;
 }
 
 .container #face {
@@ -53,12 +55,8 @@ button {
   margin-bottom: 0.625rem;
 }
 
-.container .content {
-  padding: 0.5rem 0.625rem;
-}
-
 .container .content .joke-text {
-  height: 100px;
+  height: 10rem;
   width: 100%;
   flex-wrap: wrap;
   margin: 1rem 0;
@@ -71,6 +69,7 @@ button {
   font-weight: 600;
   box-shadow: 0 0.25rem 0.5rem rgba(255, 255, 255, 0.3);
   padding: 0.5rem;
+  overflow: auto;
 }
 .container .content #generate-button {
   background-color: var(--icon-color);
@@ -81,4 +80,10 @@ button {
 .container .content #generate-button:hover {
   border-color: var(--icon-color);
   background-color: transparent;
+}
+
+@media only screen and (max-width: 37.5rem) {
+  .container .content #generate-button {
+    width: 100%;
+  }
 }
