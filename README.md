@@ -11,13 +11,11 @@
 | [8-Gmail-Navbar](https://delightful-biscochitos-4d2983.netlify.app/) | HTML5, CSS3, JS |
 | [9-Country-Guide](https://668517722197d5c9cd54b171--willowy-stardust-79b475.netlify.app/) | HTML5, CSS3, JS
 | [11-Weather-App](https://66851d71683e17d164993634--willowy-sprite-8e0f46.netlify.app/) | HTML5, CSS3, JS |
+| [12-Random-Joke-Generator](https://6685ad11ed43208d649b0fc7--glittery-faun-253d88.netlify.app/) | HTML5, CSS3, JS |
 | [Icon Bar With Dropdown Items](https://sensational-llama-635cf4.netlify.app)   | HTML5, CSS3, JS |
 | [Quiz App](https://majestic-gingersnap-64dcdc.netlify.app)   | HTML5, CSS3, JS |
 | [Responsive Navbar](https://dynamic-sherbet-99d8cd.netlify.app)   | HTML5, CSS3, JS |
 | [Twitter Sidebar Clone](https://profound-bienenstitch-b9df55.netlify.app)   | HTML5, CSS3, JS |
 | [To Do List](https://starlit-zabaione-436c87.netlify.app)   | HTML5, SCSS, JS |
-| [Gmail Navbar Clone](https://admirable-custard-fa5354.netlify.app)  | HTML5, CSS3, JS |
-| [Color Flipper](https://splendid-halva-117029.netlify.app)  | HTML5, CSS3, JS |
-| [Country Guide](https://classy-malasada-2f3876.netlify.app)  | HTML5, CSS3, JS |
-| [Random Joke Generator](https://guileless-stardust-47789c.netlify.app)  | HTML5, CSS3, JS |
+
 
