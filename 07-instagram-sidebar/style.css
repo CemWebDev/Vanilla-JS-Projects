@@ -78,6 +78,8 @@ i {
 
 .mobile-icon {
   display: none;
+  margin-top: 0.75rem;
+  margin-bottom: 2.25rem;
 }
 
 .sidebar-list {
@@ -107,6 +109,8 @@ i {
   cursor: pointer;
 }
 .more-modal-box {
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   left: 1%;
   top: 27%;
@@ -120,13 +124,13 @@ i {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 .more-modal-box ul li {
   cursor: pointer;
   width: 100%;
-  border-radius: .25rem;
-  padding: .25rem;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
 }
 .more-modal-box ul li:hover {
   background-color: var(--hover-color);
@@ -136,17 +140,35 @@ i {
   align-items: center;
   gap: 1rem;
   color: var(--header-color);
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 .more-modal-box > div:nth-child(3),
 .more-modal-box > div:last-child {
   color: var(--header-color);
   cursor: pointer;
-  font-size: .875rem;
-  padding: .5rem;
-  border-radius: .25rem;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
 }
 .more-modal-box > div:nth-child(3):hover,
 .more-modal-box > div:last-child:hover {
   background-color: var(--hover-color);
+}
+@media only screen and (max-width: 67.5rem) {
+  .app {
+    width: 10%;
+  }
+  .app-wrapper span {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+  .mobile-icon {
+    display: block;
+  }
+  .sidebar-list-item:hover {
+    scale: 1.2;
+    background-color: transparent;
+  }
 }
