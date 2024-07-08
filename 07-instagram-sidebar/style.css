@@ -46,6 +46,10 @@ i {
   background-color: var(--separator-color);
   margin: 1rem 0;
 }
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
 .app {
   height: 100%;
   width: 18%;
