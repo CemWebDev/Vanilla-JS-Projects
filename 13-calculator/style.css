@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease all;
+}
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
