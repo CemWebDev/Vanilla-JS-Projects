@@ -158,6 +158,22 @@ i {
 .more-modal-box > div:last-child:hover {
   background-color: var(--hover-color);
 }
+.change-theme {
+/*   opacity: 0;
+  visibility: hidden; */
+  color: var(--white);
+  background-color: var(--addition-menu-background-color);
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  left: 1%;
+  top: 55%;
+  border-radius: 15px;
+  font-size: .8125rem;
+}
+.change-theme .box-header, .box-bottom {
+  display: flex;
+}
 @media only screen and (max-width: 67.5rem) {
   .app {
     width: 10%;
