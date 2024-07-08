@@ -124,10 +124,12 @@ i {
 }
 .more-modal-box ul li {
   cursor: pointer;
-  background-color: var(--hover-color);
   width: 100%;
   border-radius: .25rem;
-  padding: .5rem;
+  padding: .25rem;
+}
+.more-modal-box ul li:hover {
+  background-color: var(--hover-color);
 }
 .more-modal-box ul li a {
   display: flex;
@@ -136,8 +138,15 @@ i {
   color: var(--header-color);
   font-size: .875rem;
 }
-.more-modal-box > div {
+.more-modal-box > div:nth-child(3),
+.more-modal-box > div:last-child {
   color: var(--header-color);
   cursor: pointer;
   font-size: .875rem;
+  padding: .5rem;
+  border-radius: .25rem;
+}
+.more-modal-box > div:nth-child(3):hover,
+.more-modal-box > div:last-child:hover {
+  background-color: var(--hover-color);
 }
