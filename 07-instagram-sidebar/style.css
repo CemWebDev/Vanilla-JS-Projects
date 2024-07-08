@@ -12,7 +12,7 @@
   --hover-color: rgba(230, 230, 230, 0.2);
   --addition-menu-background-color: rgb(38, 38, 38);
   --separator-color: rgba(90, 90, 90, 0.8);
-  --toggle-default-color: rgb(0, 147, 242);
+  --toggle-color: rgb(0, 147, 242);
   --light-mode-hover-color: rgba(0, 0, 0, 0.2);
 }
 a {
@@ -38,7 +38,7 @@ i {
   width: 100%;
   height: 1px;
   background-color: var(--separator-color);
-  margin: 1rem 0;
+  margin: .5rem 0;
 }
 .sep-2 {
   width: 100%;
@@ -159,8 +159,6 @@ i {
   background-color: var(--hover-color);
 }
 .change-theme {
-/*   opacity: 0;
-  visibility: hidden; */
   color: var(--white);
   background-color: var(--addition-menu-background-color);
   width: 250px;
@@ -169,10 +167,34 @@ i {
   left: 1%;
   top: 55%;
   border-radius: 15px;
-  font-size: .8125rem;
+  font-size: 0.8125rem;
 }
-.change-theme .box-header, .box-bottom {
+.change-theme .box-header,
+.box-bottom {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-header {
+  padding: 10px;
+}
+.box-header > div:first-child{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.box-header i:last-child {
+  color: #f00;
+}
+.box-bottom {
+  padding: 0 1rem;
+}
+.bi-toggle-on {
+  color: var(--toggle-color);
+}
+.change-theme i {
+  cursor: pointer;
+  font-size: 14px;
 }
 @media only screen and (max-width: 67.5rem) {
   .app {
