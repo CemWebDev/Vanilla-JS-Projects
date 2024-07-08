@@ -26,6 +26,7 @@ body {
   background-color: var(--dark-mode-background-color);
   height: 100vh;
   font-family: "Poppins", sans-serif;
+  position: relative;
 }
 
 i {
