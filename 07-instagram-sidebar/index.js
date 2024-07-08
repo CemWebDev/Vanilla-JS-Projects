@@ -4,6 +4,7 @@ const changeThemeBtn = document.querySelector("#change-theme");
 const changeThemeBox = document.querySelector(".change-theme-box");
 const closeChangeThemeBox = document.querySelector("#close-change-theme-box");
 const toggleBtn = document.querySelector(".toggle-btn");
+const backMark = document.querySelector(".bi-arrow-left");
 
 moreModalIcon.addEventListener("click", () => {
   moreModalBox.classList.toggle("visible");
@@ -15,6 +16,11 @@ window.addEventListener("click", (e) => {
   ) {
     moreModalBox.classList.remove("visible");
   }
+});
+
+backMark.addEventListener("click", () => {
+  changeThemeBox.classList.remove("visible");
+  moreModalBox.classList.add("visible");
 });
 
 changeThemeBtn.addEventListener("click", () => {
