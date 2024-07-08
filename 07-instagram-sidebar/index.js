@@ -3,6 +3,7 @@ const moreModalBox = document.querySelector(".more-modal-box");
 const changeThemeBtn = document.querySelector("#change-theme");
 const changeThemeBox = document.querySelector(".change-theme-box");
 const closeChangeThemeBox = document.querySelector("#close-change-theme-box");
+const toggleBtn = document.querySelector(".toggle-btn");
 
 moreModalIcon.addEventListener("click", () => {
   moreModalBox.classList.toggle("visible");
@@ -23,4 +24,8 @@ changeThemeBtn.addEventListener("click", () => {
 
 closeChangeThemeBox.addEventListener("click", () => {
   changeThemeBox.classList.remove("visible");
+});
+
+toggleBtn.addEventListener("click", () => {
+  toggleBtn.classList.toggle("bi-toggle2-off");
 });
