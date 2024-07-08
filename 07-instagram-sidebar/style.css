@@ -120,13 +120,24 @@ i {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: .5rem;
 }
 .more-modal-box ul li {
   cursor: pointer;
+  background-color: var(--hover-color);
+  width: 100%;
+  border-radius: .25rem;
+  padding: .5rem;
 }
 .more-modal-box ul li a {
   display: flex;
   align-items: center;
   gap: 1rem;
+  color: var(--header-color);
+  font-size: .875rem;
+}
+.more-modal-box > div {
+  color: var(--header-color);
+  cursor: pointer;
+  font-size: .875rem;
 }
