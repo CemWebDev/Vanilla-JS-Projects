@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.2s ease;
+  transition: 0.4s ease;
 }
 :root {
   --header-color: #f5f5f5;
@@ -60,6 +60,7 @@ i {
 .header h4 {
   color: var(--header-color);
   font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
 }
 
 .mobile-icon {
@@ -70,6 +71,16 @@ i {
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
+}
+.sidebar-list-item {
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem 0.25rem 0;
+}
+.sidebar-list-item:hover {
+  background-color: var(--hover-color);
+}
+.sidebar-list-item:hover > a > i {
+  scale: 1.1;
 }
 .sidebar-list-item > a {
   display: flex;
