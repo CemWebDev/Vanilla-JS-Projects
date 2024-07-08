@@ -47,8 +47,8 @@ i {
   margin: 1rem 0;
 }
 .visible {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 .app {
   height: 100%;
