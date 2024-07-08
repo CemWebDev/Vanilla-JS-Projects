@@ -38,11 +38,13 @@ i {
   width: 100%;
   height: 1px;
   background-color: var(--separator-color);
+  margin: 1rem 0;
 }
 .sep-2 {
   width: 100%;
   height: 3px;
   background-color: var(--separator-color);
+  margin: 1rem 0;
 }
 .app {
   height: 100%;
@@ -103,4 +105,28 @@ i {
   font-size: 1.5rem;
   color: var(--header-color);
   cursor: pointer;
+}
+.more-modal-box {
+  position: absolute;
+  left: 1%;
+  top: 27%;
+  width: 280px;
+  height: 410px;
+  border-radius: 15px;
+  background-color: var(--addition-menu-background-color);
+  padding: 1rem;
+}
+.more-modal-box ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.more-modal-box ul li {
+  cursor: pointer;
+}
+.more-modal-box ul li a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
