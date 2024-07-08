@@ -158,7 +158,7 @@ i {
 .more-modal-box > div:last-child:hover {
   background-color: var(--hover-color);
 }
-.change-theme {
+.change-theme-box {
   opacity: 0;
   visibility: hidden;
   color: var(--white);
@@ -171,7 +171,7 @@ i {
   border-radius: 15px;
   font-size: 0.8125rem;
 }
-.change-theme .box-header,
+.change-theme-box .box-header,
 .box-bottom {
   display: flex;
   align-items: center;
@@ -194,7 +194,7 @@ i {
 .bi-toggle-on {
   color: var(--toggle-color);
 }
-.change-theme i {
+.change-theme-box i {
   cursor: pointer;
   font-size: 1rem;
 }

@@ -1,6 +1,8 @@
 const moreModalIcon = document.querySelector(".more i");
 const moreModalBox = document.querySelector(".more-modal-box");
 const changeThemeBtn = document.querySelector("#change-theme");
+const changeThemeBox = document.querySelector(".change-theme-box");
+const closeChangeThemeBox = document.querySelector("#close-change-theme-box");
 
 moreModalIcon.addEventListener("click", () => {
   moreModalBox.classList.toggle("visible");
@@ -15,5 +17,10 @@ window.addEventListener("click", (e) => {
 });
 
 changeThemeBtn.addEventListener("click", () => {
-  alert("n");
+  moreModalBox.classList.remove("visible");
+  changeThemeBox.classList.add("visible");
+});
+
+closeChangeThemeBox.addEventListener("click", () => {
+  changeThemeBox.classList.remove("visible");
 });
