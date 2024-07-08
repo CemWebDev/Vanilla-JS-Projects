@@ -24,7 +24,7 @@ li {
 }
 body {
   background-color: var(--dark-mode-background-color);
-  min-height: 100vh;
+  height: 100vh;
   font-family: "Poppins", sans-serif;
 }
 
@@ -34,4 +34,27 @@ i {
 .header h4 {
   color: var(--header-color);
   font-family: "Pacifico", cursive;
+}
+
+.app {
+  height: 100%;
+  width: 18%;
+  border-right: 1px solid var(--white);
+  padding: 1.25rem 3rem;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+.sidebar-list-item > a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--header-color);
 }
