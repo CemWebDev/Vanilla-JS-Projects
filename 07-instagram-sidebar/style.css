@@ -31,10 +31,6 @@ body {
 i {
   color: var(--header-color);
 }
-.header h4 {
-  color: var(--header-color);
-  font-family: "Pacifico", cursive;
-}
 
 .app {
   height: 100%;
@@ -50,11 +46,33 @@ i {
   justify-content: space-between;
   position: relative;
 }
+.header {
+  margin-top: .75rem;
+  margin-bottom: 2.25rem;
+}
 
+.header h4 {
+  color: var(--header-color);
+  font-family: "Pacifico", cursive;
+}
 
+.mobile-icon {
+  display: none;
+}
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
 .sidebar-list-item > a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   color: var(--header-color);
+}
+
+.more{
+  position: absolute;
+  bottom: -5rem;
 }
