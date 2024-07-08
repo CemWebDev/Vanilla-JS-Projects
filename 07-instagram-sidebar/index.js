@@ -1,5 +1,6 @@
 const moreModalIcon = document.querySelector(".more i");
 const moreModalBox = document.querySelector(".more-modal-box");
+const changeThemeBtn = document.querySelector("#change-theme");
 
 moreModalIcon.addEventListener("click", () => {
   moreModalBox.classList.toggle("visible");
@@ -11,4 +12,8 @@ window.addEventListener("click", (e) => {
   ) {
     moreModalBox.classList.remove("visible");
   }
+});
+
+changeThemeBtn.addEventListener("click", () => {
+  alert("n");
 });
