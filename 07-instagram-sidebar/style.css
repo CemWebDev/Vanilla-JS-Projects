@@ -161,6 +161,9 @@ i {
   .app-wrapper span {
     display: none;
   }
+  i {
+    font-size: 1.25rem;
+  }
   .header {
     display: none;
   }
@@ -170,5 +173,11 @@ i {
   .sidebar-list-item:hover {
     scale: 1.2;
     background-color: transparent;
+  }
+}
+@media only screen and (max-width: 48rem) {
+  .app,
+  .more-modal-box {
+    display: none;
   }
 }
