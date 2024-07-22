@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease all;
 }
 
 body {
@@ -14,48 +14,58 @@ body {
   justify-content: center;
   align-items: center;
   user-select: none;
-  padding: 10px;
+  padding: .625rem;
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  border: 0;
+  outline: 0;
+}
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
 }
 
 .container {
   background-color: #2c2d34;
-  border-radius: 18px;
-  padding: 48px 30px;
-  max-width: 400px;
+  border-radius: 1.125rem;
+  padding: 3rem 1.875rem;
+  max-width: 25rem;
   width: 100%;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 .75rem rgba(0, 0, 0, 0.6);
   color: #fff;
 }
 
 .container #form-part {
-  font-size: 18px;
+  font-size: 1.125rem;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 5px;
+  gap: .3125rem;
 }
 
 .container #form-part input,
 button {
   border: 0;
   outline: 0;
-  border-radius: 6px;
-  padding: 8px;
+  border-radius: .375rem;
+  padding: .5rem;
 }
 
 .container #form-part input {
   background: transparent;
   color: #fff;
-  border: 1px solid #ccc;
+  border: .0625rem solid #ccc;
   opacity: 0.8;
 }
 
 .container #form-part input:focus {
-  border: 2px solid #fff;
+  border: .125rem solid #fff;
   opacity: 1;
 }
 
 .container #form-part button {
-  cursor: pointer;
   background-color: #e94822;
   color: #fff;
 }
@@ -67,7 +77,7 @@ button {
 .result .movie-info {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin-top: 60px;
+  margin-top: 3.75rem;
 }
 
 .result img {
@@ -92,7 +102,7 @@ button {
   color: #f00;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
   .container #form-part {
     display: grid;
     grid-template-columns: 1fr;
@@ -100,6 +110,6 @@ button {
   .container .movie-info {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 4px;
+    gap: .25rem;
   }
 }
