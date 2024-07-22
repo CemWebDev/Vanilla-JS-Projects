@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,300;1,400&family=Outfit:wght@400;700&family=Overpass:ital@1&family=Pacifico&family=Poppins:wght@100;300;400;500&family=Roboto+Condensed&display=swap");
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
