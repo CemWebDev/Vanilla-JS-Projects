@@ -9,7 +9,7 @@ button {
   border: 0;
   outline: 0;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: .25rem;
 }
 
 body {
@@ -21,18 +21,18 @@ body {
 }
 
 body > .container {
-  max-width: 600px;
+  max-width: 37.5rem;
   width: 90%;
-  margin: 100px auto 0;
+  margin: 6.25rem auto 0;
   background-color: #e4f1fe;
-  padding: 15px 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(228, 241, 254, 0.5);
+  padding: .9375rem 1.25rem;
+  border-radius: .625rem;
+  box-shadow: 0 0 .75rem rgba(228, 241, 254, 0.5);
 }
 
 body > .container > header {
-  padding-bottom: 10px;
-  border-bottom: 3px solid #34495e;
+  padding-bottom: .625rem;
+  border-bottom: .1875rem solid #34495e;
 }
 body > .container > header > h1 {
   color: #34495e;
@@ -41,9 +41,9 @@ body > .container > header > h1 {
 body > .container > section > .options > .btn {
   width: 100%;
   text-align: left;
-  padding: 15px 10px;
-  margin: 10px auto;
-  font-size: 16px;
+  padding: .9375rem .625rem;
+  margin: .625rem auto;
+  font-size: 1rem;
   color: #fff;
   background-color: #34495e;
 }
@@ -56,13 +56,13 @@ body > .container > section > .options > .btn:disabled {
 }
 
 body > .container > section > button#next-button {
-  padding: 10px;
+  padding: .625rem;
   color: #fff;
   background-color: #34495e;
-  margin: 30px auto 0;
-  width: 120px;
+  margin: 1.875rem auto 0;
+  width: 7.5rem;
   display: none;
-  font-size: 15px;
+  font-size: .9375rem;
 }
 
 .correct {
