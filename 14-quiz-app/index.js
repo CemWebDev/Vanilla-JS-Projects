@@ -14,7 +14,7 @@ const startQuiz = () => {
   showQuestion();
 };
 
-function showQuestion() {
+const showQuestion = () => {
   resetPage();
   let currentQuestion = questions[currentQuestionIndex];
   let questionNumber = currentQuestionIndex + 1;
@@ -29,14 +29,14 @@ function showQuestion() {
     }
     button.addEventListener("click", selectAnswer);
   });
-}
+};
 
-function resetPage() {
+const resetPage = () => {
   nextButton.style.display = "none";
   while (answerButtons.firstChild) {
     answerButtons.removeChild(answerButtons.firstChild);
   }
-}
+};
 
 function selectAnswer(e) {
   const selectedOption = e.target;
