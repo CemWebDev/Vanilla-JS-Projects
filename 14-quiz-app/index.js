@@ -38,7 +38,7 @@ const resetPage = () => {
   }
 };
 
-function selectAnswer(e) {
+const selectAnswer = (e) => {
   const selectedOption = e.target;
   const isCorrect = selectedOption.dataset.correct === "true";
   console.log(selectedOption);
@@ -56,6 +56,7 @@ function selectAnswer(e) {
   });
   nextButton.style.display = "block";
 }
+
 
 function showScore() {
   resetPage();
