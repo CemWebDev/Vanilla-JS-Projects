@@ -66,7 +66,7 @@ const showScore = () => {
 }
 
 
-function handleNextButton() {
+const handleNextButton = () => {
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
     showQuestion();
