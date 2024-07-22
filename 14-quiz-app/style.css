@@ -18,6 +18,10 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body > .container {
