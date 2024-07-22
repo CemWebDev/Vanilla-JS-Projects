@@ -26,6 +26,7 @@ input {
 input:focus {
   border-color: #fff;
 }
+
 button {
   border: 0;
   outline: 0;
