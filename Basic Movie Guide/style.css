@@ -20,7 +20,11 @@ body {
 
 input {
   border: 0;
+  border: 1px solid #aaa;
   outline: 0;
+}
+input:focus {
+  border-color: #fff;
 }
 button {
   border: 0;
@@ -47,8 +51,6 @@ button {
 
 .container #form-part input,
 button {
-  border: 0;
-  outline: 0;
   border-radius: .375rem;
   padding: .5rem;
 }
@@ -56,14 +58,8 @@ button {
 .container #form-part input {
   background: transparent;
   color: #fff;
-  border: .0625rem solid #ccc;
-  opacity: 0.8;
 }
 
-.container #form-part input:focus {
-  border: .125rem solid #fff;
-  opacity: 1;
-}
 
 .container #form-part button {
   background-color: #e94822;
@@ -77,7 +73,7 @@ button {
 .result .movie-info {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin-top: 3.75rem;
+  margin-top: 1.25rem;
 }
 
 .result img {
@@ -103,6 +99,9 @@ button {
 }
 
 @media (max-width: 37.5rem) {
+  img {
+    width: 50%;
+  }
   .container #form-part {
     display: grid;
     grid-template-columns: 1fr;
