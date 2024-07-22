@@ -58,12 +58,13 @@ const selectAnswer = (e) => {
 }
 
 
-function showScore() {
+const showScore = () => {
   resetPage();
   questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
 }
+
 
 function handleNextButton() {
   currentQuestionIndex++;
